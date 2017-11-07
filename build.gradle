@@ -48,6 +48,9 @@ task integrationTest(type: Test, group: 'verification') {
 dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-amqp'
 	compile 'org.codehaus.groovy:groovy-all:2.4.7'
+	testCompile group: 'org.jmockit', name: 'jmockit', version: '1.8'
+	testCompile group: 'org.powermock', name: 'powermock-api-mockito', version: '1.7.3'
+	testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '1.7.3'
 	testCompile 'org.springframework.boot:spring-boot-starter-test'
 	testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
 	testCompile 'org.spockframework:spock-spring:1.1-groovy-2.4'
